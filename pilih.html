@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .verification-item {
+            height: 80px; /* Mengatur tinggi item verifikasi */
+        }
+        .verification-icon {
+            font-size: 3rem; /* Memperbesar ukuran ikon */
+        }
+        .verification-link {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem; /* Memperbesar padding */
+            background-color: white;
+            border: 1px solid #e5e7eb; /* Border Gray-200 */
+            border-radius: 0.5rem; /* Rounded-lg */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow-md */
+            transition: background-color 0.2s;
+        }
+        .verification-link:hover {
+            background-color: #f9fafb; /* Hover Gray-50 */
+        }
+    </style>
+    
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <div class="flex items-center justify-absolute max-w-md mx-auto mt-4 p-4">
+        <i class="fas fa-arrow-left text-gray-600"></i>
+        <h1 class="ml-2 text-xl font-bold">Masuk</h1>
+    </div>
+
+    <!-- Main Content -->
+    <h2 class="text-center text-lg font-bold mb-2 mt-4 text-black-600">Pilih Metode Verifikasi</h2>
+    <p class="text-center text-gray-600 font-semibold mb-6">Pilih salah satu metode di bawah ini untuk mendapatkan kode verifikasi.</p>
+
+    <div class="max-w-md mx-auto mt-4">
+    <div class="space-y-4">
+        <a href="otp.html?method=WhatsApp" class="verification-link">
+            <i class="fab fa-whatsapp text-green-500 verification-icon"></i>
+            <div class="ml-4">
+                <p class="font-semibold">kirim ke WhatsApp</p>
+                <p class="text-gray-600"></p>
+            </div>
+        </a>
+        <a href="otp.html?method=Sms" class="verification-link">
+            <i class="fas fa-comment-dots text-green-500 verification-icon"></i>
+            <div class="ml-4">
+                <p class="font-semibold">kirim ke SMS</p>
+                <p class="text-gray-600"></p>
+            </div>
+        </a>
+    </div>
+</div>
+</body>
+</html>
